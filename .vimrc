@@ -41,7 +41,7 @@
 " Sets how many lines of history VIM has to remember
 set history=700
 set number
-
+set viminfo='20,<50,s10,h 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
