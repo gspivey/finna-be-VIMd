@@ -4,7 +4,7 @@
 "       gspivey
 "
 " Version: 
-"       .10 - 02/25/14 
+"       .11 - 12/17/17
 "
 " Blog_post: 
 "      TBD 
@@ -43,6 +43,10 @@ set history=700
 set number
 set viminfo='20,<1000,s10,h 
 
+
+" Additional Mapping for ESC
+inoremap jj <Esc>
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -55,11 +59,19 @@ set hlsearch
 set incsearch
 
 
+" Powerline
+"set rtp+=~/.local/lib/python2.7/site-packages/powerline/bindings/vim
+
+"python from powerline.vim import setup as powerline_setup
+"python powerline_setup()
+"python del powerline_setup
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Enable syntax highlighting
 syntax enable
+set t_Co=256
 
 colorscheme molokai
 
